@@ -39,6 +39,9 @@ var Main = (function (_super) {
         this.stage.addChild(this.m_loadingView);
         //建立WS連線
         this.m_clientWS = new ClientWS();
+        //
+        this.m_HttpInterface = new HttpInterface();
+        this.m_HttpInterface.sendGetRequest('http://127.0.0.1:4000', '');
         //初始化Resource资源加载库
         RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
         RES.loadConfig("resource/default.res.json", "resource/");

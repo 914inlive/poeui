@@ -11,6 +11,7 @@
 	"game": [
 		"bin-debug/AssetAdapter.js",
 		"bin-debug/ClientWS.js",
+		"bin-debug/HttpInterface.js",
 		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
 		"bin-debug/ThemeAdapter.js"

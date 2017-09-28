@@ -5,6 +5,8 @@ class Main extends eui.UILayer {
      */
     private m_loadingView: LoadingUI;
     private m_clientWS: ClientWS;
+    private m_HttpInterface: HttpInterface;
+
     protected createChildren(): void {
         super.createChildren();
 
@@ -31,6 +33,10 @@ class Main extends eui.UILayer {
 
         //建立WS連線
         this.m_clientWS = new ClientWS();
+
+        //
+        this.m_HttpInterface = new HttpInterface();
+        this.m_HttpInterface.sendGetRequest('http://127.0.0.1:4000', '');
         
         //初始化Resource资源加载库
         RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
