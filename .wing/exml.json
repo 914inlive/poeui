@@ -1,0 +1,21 @@
+{
+  "global": {
+    "globalRulerEnable": true,
+    "globalAdsorbEnable": true,
+    "globalBindingDataTestObj": [],
+    "globalAutoLayerMarkEnable": true
+  },
+  "15ec7dda8bc": {
+    "guideLinesEnabled": true
+  },
+  "15ec7dfa43e": {
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100,
+    "bindingDataTestObj": []
+  }
+}
