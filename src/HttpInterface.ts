@@ -22,9 +22,9 @@ class HttpInterface extends egret.DisplayObjectContainer {
         request.open(url+params,egret.HttpMethod.GET);
         request.send();
 
-        request.addEventListener(egret.Event.COMPLETE,this.onGetComplete,this);
-        request.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onGetIOError,this);
-        request.addEventListener(egret.ProgressEvent.PROGRESS,this.onGetProgress,this);
+        request.addEventListener(egret.Event.COMPLETE, this.onGetComplete, this);
+        request.addEventListener(egret.IOErrorEvent.IO_ERROR, this.onGetIOError, this);
+        request.addEventListener(egret.ProgressEvent.PROGRESS, this.onGetProgress, this);
     }
 
     private onGetComplete(event:egret.Event):void {

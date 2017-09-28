@@ -35,6 +35,7 @@ class Main extends eui.UILayer {
 
         //
         this.m_HttpInterface = new HttpInterface();
+        //this.m_HttpInterface.sendGetRequest('https://127.0.0.1:8443', '');
         this.m_HttpInterface.sendGetRequest('http://127.0.0.1:4000', '');
         
         //初始化Resource资源加载库
