@@ -1,6 +1,5 @@
 class Main extends eui.UILayer {
     /**
-     * 加载进度界面
      * loading process interface
      */
     private m_loadingView: LoadingUI;
@@ -44,7 +43,6 @@ class Main extends eui.UILayer {
     }
 
     /**
-     * 配置文件加载完成,开始预加载皮肤主题资源和preload资源组。
      * Loading of configuration file is complete, start to pre-load the theme configuration file and the preload resource group
      */
     private onConfigComplete(event: RES.ResourceEvent): void {
@@ -65,7 +63,6 @@ class Main extends eui.UILayer {
     private isThemeLoadEnd: boolean = false;
 
     /**
-     * 主题文件加载完成,开始预加载
      * Loading of theme configuration file is complete, start to pre-load the 
      */
 
@@ -77,7 +74,6 @@ class Main extends eui.UILayer {
     private isResourceLoadEnd: boolean = false;
 
     /**
-     * preload资源组加载完成
      * preload resource group is loaded
      */
     private onResourceLoadComplete(event: RES.ResourceEvent): void {
@@ -99,7 +95,6 @@ class Main extends eui.UILayer {
     }
 
     /**
-     * 资源组加载出错
      *  The resource group loading failed
      */
     private onItemLoadError(event: RES.ResourceEvent): void {
@@ -107,19 +102,16 @@ class Main extends eui.UILayer {
     }
 
     /**
-     * 资源组加载出错
      * Resource group loading failed
      */
     private onResourceLoadError(event: RES.ResourceEvent): void {
         //TODO
         console.warn("Group:" + event.groupName + " has failed to load");
-        //忽略加载失败的项目
         //ignore loading failed projects
         this.onResourceLoadComplete(event);
     }
 
     /**
-     * preload资源组加载进度
      * loading process of preload resource
      */
     private onResourceProgress(event: RES.ResourceEvent): void {
@@ -131,7 +123,6 @@ class Main extends eui.UILayer {
     private textfield: egret.TextField;
 
     /**
-     * 创建场景界面
      * Create scene interface
      */
     protected startCreateScene(): void {
@@ -147,7 +138,6 @@ class Main extends eui.UILayer {
     }
 
     /**
-     * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
      * Create a Bitmap object according to name keyword.As for the property of name please refer to the configuration file of resources/resource.json.
      */
     private createBitmapByName(name: string, width: number, height: number): egret.Bitmap {
@@ -160,7 +150,6 @@ class Main extends eui.UILayer {
     }
     
     /**
-     * 点击按钮
      * Click the button
      */
     private onButtonClick(e: egret.TouchEvent) {
